@@ -1,0 +1,48 @@
+.Results {
+  background-color: #14240b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.Results h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #e6ebec;
+}
+
+.Results h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #e6ebec;
+}
+
+.Results p {
+  font-size: 1.2em;
+  margin: 5px 0;
+  color: #e6ebec;
+}
+
+.Results button {
+  background-color: #0d9453;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: background-color 0.2s, transform 0.2s;
+  margin-top: auto; /* Расположить кнопку снизу */
+  align-self: center; /* Центрировать кнопку */
+}
+
+.Results button:hover {
+  background-color: #0d9453;
+  transform: scale(1.05);
+}
