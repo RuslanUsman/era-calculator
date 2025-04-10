@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/era-calculator/static/css/main.cd13b840.css",
+    "main.js": "/era-calculator/static/js/main.36c7ee3d.js",
+    "static/js/453.b7e397c0.chunk.js": "/era-calculator/static/js/453.b7e397c0.chunk.js",
+    "index.html": "/era-calculator/index.html",
+    "main.cd13b840.css.map": "/era-calculator/static/css/main.cd13b840.css.map",
+    "main.36c7ee3d.js.map": "/era-calculator/static/js/main.36c7ee3d.js.map",
+    "453.b7e397c0.chunk.js.map": "/era-calculator/static/js/453.b7e397c0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cd13b840.css",
+    "static/js/main.36c7ee3d.js"
+  ]
+}
