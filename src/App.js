@@ -1,58 +1,27 @@
-import { BrowserRouter as Router, Routes, Route, Link, useLocation,  } from 'react-router-dom';
-
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-
-import CalculatorExplosion from './components/CalculatorExplosion';
 import MainMenu from './components/MainMenu';
 import Results from './components/Results';
+import EraCalculator from './components/EraCalculator'; // Новый компонент
 
 import './App.css';
 
-const MainContent = () => {
-  const location = useLocation();
-
-  const hiddenFooterPaths = [
-    '/dragon-web-app', '/main-menu', '/materials', '/construction',
-    '/result', '/menu', '/calculator-explosion', '/results',
-    '/tal', '/instinct', '/intellect', '/fight', '/pricelist', '/talant-lios'
-  ];
-  const showFooter = !hiddenFooterPaths.includes(location.pathname);
-
-  return (
-    <>
-      <main>
-        <Routes>
-          <Route path="/" element={<MainMenu />} />
-          <Route path="/menu" element={<MainMenu />} />
-          <Route path="/calculator-explosion" element={<CalculatorExplosion />} />
-          <Route path="/results" element={<Results />} />
-        </Routes>
-      </main>
-      {showFooter && (
-        <footer>
-          <p>© 2025 Dragon. Все права защищены.</p>
-          <div className="footer-buttons">
-            <Link to="/main-menu">
-              <button className="animated-button">Калькулятор рейда</button>
-            </Link>
-          </div>
-        </footer>
-      )}
-    </>
-  );
-};
-
 const App = () => {
   return (
-    <Router>
+    <Router basename="/era-calculator">
       <div>
-        <header>
-          <nav>
-            <Link to="/">Главная</Link>
-          </nav>
-        </header>
-        <MainContent />
+        {/* Основное содержимое */}
+        <main>
+          <Routes>
+            {/* Главная страница: MainMenu */}
+            <Route path="/" element={<MainMenu />} />
+            {/* Маршрут для EraCalculator */}
+            <Route path="/era-calculator" element={<EraCalculator />} />
+            {/* Маршрут для Results */}
+            <Route path="/results" element={<Results />} />
+          </Routes>
+        </main>
       </div>
     </Router>
   );

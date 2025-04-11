@@ -1,5 +1,5 @@
 .Results {
-  background-color: #14240b;
+  background-color: #1c1c1c; /* Глубокий чёрный фон */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,25 +13,25 @@
   font-size: 2em;
   margin-bottom: 20px;
   font-weight: bold;
-  color: #e6ebec;
+  color: #ff6347; /* Красный текст */
 }
 
 .Results h2 {
   font-size: 1.5em;
   margin-bottom: 10px;
   font-weight: bold;
-  color: #e6ebec;
+  color: #ff6347; /* Красный текст */
 }
 
 .Results p {
   font-size: 1.2em;
   margin: 5px 0;
-  color: #e6ebec;
+  color: #ff6347; /* Красный текст */
 }
 
 .Results button {
-  background-color: #0d9453;
-  color: #fff;
+  background-color: #292929; /* Углубляем чёрный тон */
+  color: #ff4500; /* Яркий красный текст */
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -43,6 +43,6 @@
 }
 
 .Results button:hover {
-  background-color: #0d9453;
+  background-color: #2f2f2f; /* Стальной серый фон */
   transform: scale(1.05);
 }
